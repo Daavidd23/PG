@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="texto">
+        <h1>¿Qué quieres añadir?</h1></div>
+
+    <div class="opciones">
+        <div class="libro"><img src="./img/libroimg.png" alt=""><button  id="libroId"> <span class="button_top"> Añadir libro </span></button></div>
+        <div class="cancion"><img src="./img/image (7)-Photoroom.png" alt=""><button id="cancionId"> <span class="button_top"> Añadir canción </span></button></div>
+        <div class="pelicula"><img src="./img/peliculaimg.png" alt=""><button id="peliculaId"> <span class="button_top"> Añadir película </span></button></div>
+    </div>
+
+    <div id="titulosH2"> 
+        <h2>Libros</h2>
+    <h2>Canciones</h2>
+    <h2>Peliculas</h2>
+</div>
+   
+    <div class="tablasResultado">
+ 
+    <div id="contenedorLibros"></div>
+
+    <div id="contenedorCancion"></div>
+
+ 
+    <div id="contenedorPelicula"></div> 
+
+    </div>
+
+        <!-- formulario Libro -->
+    <div id="transparenteIdLibro"class="fondoTarnsparente">
+    <div class="formularioLibro">
+    <span id="cerrarIdLibro" class="cerrarCla">x</span>
+    
+    <form id="formularioLibro">
+        <h2>Añadir libro</h2>
+    <label for="">Nombre</label>
+    <input id="nombreLibro"  type="text">  
+    <label>Autor</label>
+    <input id="autorLibro" type="text">
+    <label>Año de Publicación</label>
+    <input id="añoLibro" type="text">
+    <label>Género</label>
+    <select id="generoLibro">
+        <option value="Romance">Romance</option>
+        <option value="TerrorLibro">Terror</option>
+        <option value="Fantasía">Fantasía</option>
+        <option value="Histórico">Histórico</option>
+        </select>
+    <label class="custom-file-button" for="fotoL">Selecciona la portada del libro:</label>
+    <input type="file" id="fotoL"  name="photo" accept="image/*">
+      <span id="fileName"></span>
+
+    <button type="submit" class="botonLibro"> Añadir libro </button>
+    </form>
+    </div>
+    </div>
+
+        <!-- formulario Cancion -->
+    <div id="transparenteIdCancion"class="fondoTarnsparente">
+        <div class="formularioLibro">
+        <span id="cerrarIdCancion" class="cerrarCla">x</span>
+        
+        <form id="formularioCancion">
+            <h2>Añadir canción</h2>
+        <label for="">Nombre</label>
+        <input id="nombreCancion" type="text">  
+        <label>Artista</label>
+        <input id="ArtistaCancion" type="text">
+        <label>Año de Publicación</label>
+        <input id="añoCancion"  type="text">
+        <label>Género</label>
+        <select id="generoCancion">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Jazz">Jazz</option>
+        </select>
+        <button type="submit" class="botonCancion"> Añadir canción </button>
+    </form>
+        </div>
+        </div>
+
+        <!-- formulario Pelicula -->
+    <div id="transparenteIPelicula"class="fondoTarnsparente">
+        <div class="formularioLibro">
+        <span id="cerrarIdPelicula" class="cerrarCla">x</span>
+        
+        <form id="formularioPelicula">
+            <h2>Añadir pelicula</h2>
+        <label for="">Nombre</label>
+        <input id="nombrePelicula"  type="text">  
+        <label>Artista</label>
+        <input id="artistaPelicula" type="text">
+        <label>Año de Publicación</label>
+        <input id="añoPelicula"  type="text">
+        <label>Género</label>
+        <select id="generoPelicula">
+            <option value="Cómedia">Cómedia</option>
+            <option value="cienciaFiccion">Ciencia Ficción</option>
+            <option value="TerrorPelicula">Terror</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+        <button type="submit" class="botonPelicula"> Añadir pelicula </button>
+    </form>
+        </div>
+        </div>
+    
+    
+
+
+
+
+
+        <script src="objetos.js"></script>
+
+    <script src="blog.js"></script>
+    
+</body>
+</html>
